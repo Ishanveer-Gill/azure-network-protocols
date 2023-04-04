@@ -6,16 +6,12 @@
 I will show you how to observe different network traffic back and forth from Azure Virtual Machines with Wireshark, also we will experiment with Network Security Groups. <br />
 
 
-<!-- <h2>Video Demonstration</h2>
-
-- ### [YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://www.youtube.com) -->
-
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure (Virtual Machines/Computer)
 - Remote Desktop Connection
-- Various Command-Line Tools
-- Various Network Protocols (ICMP, SSH, DHCP, DNS, RDP)
+- Several Command-Line Tools
+- Several Network Protocols (ICMP, SSH, DHCP, DNS, RDP)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
@@ -76,7 +72,7 @@ I will show you how to observe different network traffic back and forth from Azu
 </h3>
 <br />
 <p>
-  Remote into your Windows 10 Virtual Machine, install Wireshark, open it and filter for ICMP traffic only. If you are using a Mac like me, you'll have to download <strong><a href="https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12">Microsoft Remote Desktop</a></strong> from the app store:
+  Remote into your Windows 10 Virtual Machine, install Wireshark, open it and filter for ICMP traffic only.
 </p>
 <p>
   <img src="https://i.imgur.com/x1K1646.png" height="75%" width="100%" alt="Microsoft Remote Desktop - Mac"/>
@@ -108,7 +104,7 @@ I will show you how to observe different network traffic back and forth from Azu
   <img src="https://i.imgur.com/NjuUANI.png" height="75%" width="100%" alt="ICMP traffic - ICMP denied"/>
 </p>
 <p>
-  Re-enable ICMP traffic for the Network Security Group in your Ubuntu VM and back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line ping activity (should start working again).Finally, stop the ping activity:
+  Re-enable ICMP traffic for the Network Security Group in your Ubuntu VM and back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line ping activity (you should start getting reply's and requests).Finally, stop the ping activity:
 </p>
 <p>
   <img src="https://i.imgur.com/nZbl2sA.png" height="75%" width="100%" alt="ICMP traffic - ICMP re-enabled"/>
@@ -159,7 +155,7 @@ Observe the DHCP traffic appearing in WireShark:
 <br />
 <br />
 <h3 align="center">
-  And finally, we will observe RDP traffic to finish up this tutorial
+  And lastly, we will observe RDP traffic to finish up this tutorial
 </h3>
 <br />
 <p>
@@ -177,11 +173,6 @@ Observe the DHCP traffic appearing in WireShark:
 <br />
 <br />
 <p>
-  I hope this tutorial helped you learn a little bit about network security protocols and observe traffic between virtual machines. And although I ran this on a my MacBook Air, this can be easily done on a PC without having to download a remote desktop app since Windows provides that with it's software.
+  After observing RDP traffic, you can go ahead and expolore on your own. Don't forget to delete your resource group on Azure after you are done. 
 </p>
-<p>
-  And now that we're done, DON'T FORGET TO CLEAN UP YOUR AZURE ENVIRONMENT so that you don't incur unnecessary charges.
-</p>
-<p>
-  Close your Remote Desktop connection, delete the Resource Group(s) created at the beginning of this tutorial, and verify Resource Group deletion.
-</p>
+
