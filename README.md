@@ -75,7 +75,7 @@ I will show you how to observe different network traffic back and forth from Azu
   Remote into your Windows 10 Virtual Machine, install Wireshark, open it and filter for ICMP traffic only.
 </p>
 <p>
-  <img src="https://i.imgur.com/x1K1646.png" height="75%" width="100%" alt="Microsoft Remote Desktop - Mac"/>
+  <img src="https://i.imgur.com/EhiatSx.png" height="75%" width="100%" alt="Microsoft Remote Desktop - Mac"/>
 </p>
 <p>
   Retrieve the private IP address of the Ubuntu VM and attempt to ping it from within the Windows 10 VM. Observe ping requests and replies within WireShark:
